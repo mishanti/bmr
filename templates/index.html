@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+    <h1>Welcome to the Best Movie Recommender!</h1>
+    <p>Please choose three films of your liking and rate them between 1 and 5 points.
+
+    <form action="/recommendation" method="get">
+
+      <select name="genre">
+        <option value="comedy">Comedy</option>
+        <option value="action_movie">Action Movie</option>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+        <option value="sci-fi">Sci-fi</option>
+      </select>
+
+      <p>Provide ratings for some movies:</p>
+
+      {{form.film_name1(class="form-control")}}
+      <input type="number" name="rating1" min="0.5" max="5" step="0.1" value="2.5" />
+      <br>
+      {{form.film_name2(class="form-control")}}
+      <input type="number" name="rating2" min="0.5" max="5" step="0.1" value="2.5" />
+      <br>
+      {{form.film_name3(class="form-control")}}
+      <input type="number" name="rating3" min="0.5" max="5" step="0.1" value="2.5" />
+      <br>
+      <br>
+      <input type="submit">
+
+    </form>
+
+<!--     <a href="/recommendation">Click here to see some awesome movies!</a> -->
+
+
+
+
+{% endblock %}
+

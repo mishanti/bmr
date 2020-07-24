@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BMR</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/jquery-ui.css')}}">
+  </head>
+  <body>
+
+  <img src="static/bmr_logo.jpg">
+    {% block content %}
+
+    {% endblock %}
+
+
+
+  <script type=text/javascript src="{{
+  url_for('static', filename='jquery-3.5.1.min.js') }}"></script>
+  <script type=text/javascript src="{{
+  url_for('static', filename='jquery-ui.js') }}"></script>
+  <script type=text/javascript src="{{url_for('static', filename='main.js')}}"></script>
+
+  </body>
+</html>
