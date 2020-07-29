@@ -1,0 +1,9 @@
+Flask==1.1.2
+Flask-SQLAlchemy==2.4.4
+Flask-WTF==0.14.3
+numpy==1.18.5
+pandas
+pylint==2.4.4
+sklearn==0.0
+SQLAlchemy
+WTForms==2.3.1
